@@ -29,8 +29,7 @@ header {height: 200px;
   justify-content: center;
   color: white;
 }
-a{
+.gallery-container{
 width:400px;
-  height:600px;
-  
+  height:600px; 
 }
