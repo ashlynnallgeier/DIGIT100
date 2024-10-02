@@ -30,4 +30,6 @@ header {height: 200px;
   color: white;
 }
 
-img.photo {max-width:500px; width:100%}
+.photo img {
+  max-width:200px; width:100%;
+}
