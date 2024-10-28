@@ -1,72 +1,39 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html lang="en">
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>Ashlynn Allgeier's About Page</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <style>
-            body {
-                background: #DBDCFF;
-            }
-          </style>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Ashlynn Allgeier's Website</title>
+                <link rel="stylesheet" href="home.css"> 
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+                                <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
-        <nav>
-      <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="gallery.html">Gallery</a></li>
-         <li><a href ="resume.html">Resume</a></li>
-         <li><a href = "https://github.com/ashlynnallgeier/DIGIT100">GitHub Repo</a></li>
-         <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>About page</h1>
-        <p>My name is Ashlynn Allgeier. I am a junior at Penn State Behrend, I am studying Digital Media, Arts, and Technology. This website is all about <strong>me</strong> and my hobbies. Here is <a
-            href="https://www.linkedin.com/in/ama8232/">a link my linkedin page!
-        </a></p>
-        <p>My main interests in the digital media field are photography, vidography, photo and video editing, and graphic design. </p>
-        <p>One of my other main hobbies is music; I am a vocalist, I play the acoustic guitar, and a little bit of piano. One instrument I would like to learn is the violin. I actively volunteer at my Church by being in the worship band every week as a vocalist. I also enjoy going on walks, enjoying nature, and hanging out with my friends.</p>
-        <p>One major thing that I love to do in my free time is help out with a local Christian band, The Band 814. My boyfriend has been in this band since 2022 and I started hanging around the 814 team consistently since July 2023. I run sound at concerts. I also recently started being the band's visual content creator. I am the band photographer, I work on video editing, as well as helping to design merch and keeping the website updated. <a href="https://theband814.com/">The Band 814</a>. 
-        </p>
         
-        <p>Here is a photo that I've taken recently for the band!</p>
-        <figure>
-            <img width="600" height="400" src="images/band.jpg" alt="The Band 814 Logo"/>
-            <figcaption>A photograph taken by Ashlynn Allgeier on September 21, 2024 </figcaption>
-        </figure> 
-        <h2>What are some of my favorite things?</h2>
+        <header>
+<div class="head">            <h1>Ashlynn Allgeier's Site</h1></div>
+            
+        </header>
         
-        <ul>
-            <li>Favorite Color: Light Blue</li>
-            <li>Favorite Food: Mac and Cheese</li>
-            <li>Favorite Season: Fall</li>
-            <li>Favorite Sport: Hockey</li>
-            <li>Favorite Flower(s): Daisies and Dahlias</li>
-        </ul>
+        <div class="content"><main>
+            <section>
+                <h2>About This Website</h2>
+                <div class="text"><p>Welcome to my personal website! This space is dedicated to showcasing my work, interests, and the various projects I’m passionate about. Here, you can explore my portfolio, which highlights my skills and experiences across different domains. Whether you're interested in my design projects, writing, or other creative endeavors, you'll find a collection that reflects my journey and growth.</p></div>
+            </section>
+            
+            <div style="text-align: center;">
+                <button onclick="location.href='about.html'">About Me</button>
+                <button onclick="location.href='photo.html'">Photography</button>
+                <button onclick="location.href='projects.html'">Projects</button>
+                <button onclick="location.href='resume.html'">Resume</button>
+                <button onclick="location.href='contact.html'">Contact</button>
+            </div>
+        </main></div>
         
-        <h2><strong>A glipse into my life!</strong></h2>
-        <ol>
-            <li>Background: I grew up in Erie, PA and have lived here my whole life.</li>
-            <li>Education: I am currently pursuing a Bachelor of Arts Degree in Digital Media, Arts, and Technology </li>
-            <li>Current Job: I work at Rita's Italian Ice in the summer months and Dobbins Dining Hall during the school year. </li>
-            <li>Goals: One of my goals is to start up my own photography business.</li>
-        </ol>
-        <footer>© Ashlynn Allgeier's Website 2024 </footer>
+        <footer>
+            <p>&copy; Ashlynn Allgeier 2024</p>
+        </footer>
     </body>
-    
 </html>
-
