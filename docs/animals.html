@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="gallery.css" />
+        
+        <title>Animals</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+                    <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <header><nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="photo.html">Photography</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href ="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav></header>
+        <div class="content"><title><h1>Animals</h1></title>
+            <div class="photo"><h2>Animals</h2></div>
+            <div class="overlay" id="overlay"></div>
+            <div class="gallery-container">
+                <figure><img src="images/animals/IMG_0269.jpg" alt="Pico" class="gallery-item" class="thumbnail"/><figcaption class="caption">Pico the Cat</figcaption></figure>
+                <figure><img src="images/animals/IMG_0836.jpg" alt="Lemur" class="gallery-item" class="thumbnail"/><figcaption class="caption">Lemur</figcaption></figure>
+                <figure><img src="images/animals/IMG_1447.jpg" alt="Flamingos" class="gallery-item" class="thumbnail"/><figcaption class="caption">Flamingos</figcaption></figure>
+                <figure><img src="images/animals/IMG_2040.jpg" alt="Giraffe" class="gallery-item" class="thumbnail"/><figcaption class="caption">Giraffe</figcaption></figure>
+                <figure><img src="images/animals/IMG_1463.jpg" alt="Jaguars" class="gallery-item" class="thumbnail"/><figcaption class="caption">Jaguars</figcaption></figure>
+                <figure><img src="images/animals/IMG_1507.jpg" alt="Bird" class="gallery-item" class="thumbnail"/><figcaption class="caption">Bird</figcaption></figure>
+                <figure><img src="images/animals/IMG_1765.jpg" alt="Starfish" class="gallery-item" class="thumbnail"/><figcaption class="caption">Starfish</figcaption></figure>
+                <figure><img src="images/animals/IMG_2345.jpg" alt="Milo" class="gallery-item" class="thumbnail"/><figcaption class="caption">Milo the Dog</figcaption></figure>
+                <figure><img src="images/animals/IMG_2115.jpg" alt="Red Panda" class="gallery-item" class="thumbnail"/><figcaption class="caption">Red Panda</figcaption></figure>
+                <figure><img src="images/animals/IMG_2189.jpg" alt="Meerkat" class="gallery-item" class="thumbnail"/><figcaption class="caption">Meerkat</figcaption></figure>
+                <figure><img src="images/animals/IMG_2615.jpg" alt="Bird" class="gallery-item" class="thumbnail"/><figcaption class="caption">Bird</figcaption></figure>
+                <figure><img src="images/animals/IMG_2519.jpg" alt="Lion" class="gallery-item" class="thumbnail"/><figcaption class="caption">Lion</figcaption></figure>
+                <figure><img src="images/animals/meerkat.jpg" alt="Meerkat" class="gallery-item" class="thumbnail"/><figcaption class="caption">Meerkat</figcaption></figure>
+                <figure><img src="images/animals/IMG_2408.jpg" alt="Milo" class="gallery-item" class="thumbnail"/><figcaption class="caption">Milo the Dog</figcaption></figure>
+                <figure><img src="images/animals/IMG_2530.jpg" alt="Lions" class="gallery-item" class="thumbnail"/><figcaption class="caption">Lions</figcaption></figure>
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-img" id="lightbox-img" src="">
+                    
+                    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                    <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+        
+        <div class="foottext"><footer>© Ashlynn Allgeier <span id="currentyear">2024</span> </footer></div>
+        <script src="java.js"></script>
+    </body>
+    
+</html>
