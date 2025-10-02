@@ -1,15 +1,15 @@
-// JavaScript Exercise 1
-// This script greets the user based on their input.
+window.addEventListener('DOMContentLoaded', init, false);
 
-function greetUser() {
-  // Get the value typed into the input box
-  let name = document.getElementById("nameInput").value;
-  let output = document.getElementById("output");
+function init() {
+    alert("Hi there! The page has loaded!");
 
-  // Check if user entered something
-  if (name.trim() === "") {
-    output.innerHTML = "Please enter your name before clicking submit!";
-  } else {
-    output.innerHTML = "Hello, " + name + "! Welcome to my first JavaScript exercise.";
-  }
+    var button = document.getElementById("colorBtn");
+    button.addEventListener('click', randomColor, false);
+}
+
+function randomColor() {
+    var text = document.getElementById("colorToggle");
+    var colors = ["red", "blue", "green", "purple", "orange", "pink", "brown"];
+    var randomPick = colors[Math.floor(Math.random() * colors.length)];
+    text.style.color = randomPick;
 }
