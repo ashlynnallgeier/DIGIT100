@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at bottom, #0b0f29, #000);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.star {
+  fill: white;
+  opacity: 0.8;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+.moon-group {
+  animation: moveMoon 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes moveMoon {
+  0% {
+    transform: translate(0px, 0px) scale(0.4);
+  }
+  50% {
+    transform: translate(550px, 550px) scale(1.2);
+  }
+  100% {
+    transform: translate(850px, 850px) scale(20.5);
+  }
+}
+
+
+.moon {
+  fill: #fdfde3;
+  filter: drop-shadow(0 0 20px #ffffaa);
+  animation: moonGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes moonGlow {
+  from { filter: drop-shadow(0 0 15px #fff7a1); }
+  to { filter: drop-shadow(0 0 25px #ffffcc); }
+}
+
+
+.crater {
+  fill: #d4d4aa;
+  opacity: 0.4;
+}
+
+.shooting-star {
+  stroke: white;
+  stroke-width: 2;
+  opacity: 0;
+  animation: shoot 5s linear infinite;
+}
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-500px, 500px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-800px, 800px);
+  }
+}
