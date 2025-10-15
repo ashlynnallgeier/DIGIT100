@@ -1,88 +1,60 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html lang="en">
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>Ashlynn Allgeier's About Page</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <style>
-            body {
-                background: #DBDCFF;
-            }
-          </style>
-        <link rel="stylesheet" href="site.css"> 
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-                      
-                        <link rel="icon" type="image/png" href="images/favicon.png">
-                                  
-                     
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>About | Ashlynn Allgeier</title>
+                <link rel="stylesheet" href="site.css">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+                                <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
-        <header>
-            
+        <header class="navbar">
+            <div class="logo">
+                <h1>Ashlynn Allgeier</h1>
+                <div class="tagline">Digital Media | Video Editing | Multimedia Creation</div>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="photo.html">Photography</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href ="resume.html">Resume</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="reflection.html">Reflection</a></li>
                 </ul>
             </nav>
         </header>
         
+        <main class="page-content">
+            <h1>About Me</h1>
+            <div class="subtitle">Digital Media Student | Video Editor | Multimedia Creator | Photographer</div>
+            
+            <section>
+                <p>
+                    I am a senior at Penn State Behrend pursuing a Bachelor of Arts in Digital Media, Arts, and Technology with minors in Communication Arts and Mass Media and Media Production. My passion lies in video editing, filming, and creating engaging multimedia content that combines storytelling with technical skill.
+                </p>
+                
+                <p>
+                    I have professional experience as a Web Development Assistant at Behrend Library, where I contributed to content organization and site design, but my main focus is producing high-quality visual media. I enjoy working on projects that involve video production, editing, and post-production workflows to create compelling stories.
+                </p>
+                
+                <p>
+                    Additionally, I have developed hands-on skills through volunteer work with The Band 814 and First Alliance Church, creating visual content, photography, videography, and editing videos for social media and event promotion. These experiences have strengthened my creative problem-solving, collaboration, and technical proficiency in multimedia tools such as Adobe Premiere Pro, After Effects, and Photoshop.
+                </p>
+                
+                <p>
+                    My goal is to continue growing as a digital media creator, producing professional video and multimedia content that informs, entertains, and engages audiences. I strive to combine creativity, technical expertise, and storytelling to make meaningful and impactful projects.
+                </p>
+            </section>
+        </main>
         
-        <div class="text"><h1>About page</h1>
-        <p>My name is Ashlynn Allgeier. I am a junior at Penn State Behrend, I am studying Digital Media, Arts, and Technology. This website is all about <strong>me</strong> and my hobbies. Here is <a
-            href="https://www.linkedin.com/in/ama8232/">a link my linkedin page!
-        </a></p>
-        <p>My main interests in the digital media field are photography, vidography, photo and video editing, and graphic design. </p>
-        <p>One of my other main hobbies is music; I am a vocalist, I play the acoustic guitar, and a little bit of piano. One instrument I would like to learn is the violin. I actively volunteer at my Church by being in the worship band every week as a vocalist. I also enjoy going on walks, enjoying nature, and hanging out with my friends.</p>
-        <p>One major thing that I love to do in my free time is help out with a local Christian band, The Band 814. My boyfriend has been in this band since 2022 and I started hanging around the 814 team consistently since July 2023. I run sound at concerts. I also recently started being the band's visual content creator. I am the band photographer, I work on video editing, as well as helping to design merch and keeping the website updated. <a href="https://theband814.com/">The Band 814</a>. 
-        </p>
-        
-        <p>Here is a photo that I've taken recently for the band!</p>
-        <figure>
-            <img width="600" height="400" src="images/band.jpg" alt="The Band 814 Logo"/>
-            <figcaption>A photograph taken by Ashlynn Allgeier on September 21, 2024 </figcaption>
-        </figure> 
-        <h2>What are some of my favorite things?</h2>
-        
-        <div class="fav"><ul>
-            <li>Favorite Color: Light Blue</li>
-            <li>Favorite Food: Mac and Cheese</li>
-            <li>Favorite Season: Fall</li>
-            <li>Favorite Sport: Hockey</li>
-            <li>Favorite Flower(s): Daisies and Dahlias</li>
-        </ul></div>
-        
-        <h2><strong>A glipse into my life!</strong></h2>
-        <ol>
-            <li>Background: I grew up in Erie, PA and have lived here my whole life.</li>
-            <li>Education: I am currently pursuing a Bachelor of Arts Degree in Digital Media, Arts, and Technology </li>
-            <li>Current Job: I work at Rita's Italian Ice in the summer months and Dobbins Dining Hall during the school year. </li>
-            <li>Goals: One of my goals is to start up my own photography business.</li>
-        </ol></div>
         <footer>
-        <div><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://ashlynnallgeier.github.io/DIGIT100/">Ashlynn's Portfolio</a> by <span property="cc:attributionName">Ashlynn Allgeier</span> is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
-
+            <p>
+                &copy; 2025 Ashlynn Allgeier | <a href="https://ashlynnallgeier.github.io/DIGIT100/" target="_blank">Portfolio</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND 4.0</a>
+            </p>
         </footer>
     </body>
-    
 </html>
-

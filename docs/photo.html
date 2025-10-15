@@ -2,49 +2,53 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Ashlynn Allgeier's Website</title>
-                <link rel="stylesheet" href="button.css"> 
-                    <link rel="preconnect" href="https://fonts.googleapis.com">
-                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-                                <link rel="icon" type="image/png" href="images/favicon.png">                                    
-                                    
-    </head>
-    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photography | Ashlynn Allgeier</title>
         
-        <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="site.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    
+    <body>
+        <header class="navbar">
+            <div class="logo">
+                <h1>Ashlynn Allgeier</h1>
+                <div class="tagline">Digital Media • Photography • Multimedia</div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="photo.html">Photography</a></li>
+                    <li><a href="photo.html" class="active">Photography</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href ="resume.html">Resume</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="reflection.html">Reflection</a></li>
                 </ul>
             </nav>
-            <h1>Projects</h1>
         </header>
         
-        <main>
-            <div class="text"><section>
-                <h2>Here is some of my photography work!</h2>
-            </section></div>
+        <main class="page-content">
+            <h1>Photography Projects</h1>
+            <div class="subtitle">A curated selection of my photography work across different subjects and styles.</div>
             
-            <div class="buttons" style="text-align: center;">
-                <button onclick="location.href='theband814.html'">The Band 814</button>
-                <button onclick="location.href='animals.html'">Animals</button>
-                <button onclick="location.href='nature.html'">Nature</button>
-                <button onclick="location.href='portraits.html'">Portraits</button>
-                
-            </div>
+            <section class="project-buttons">
+                <a href="theband814.html" class="button">The Band 814</a>
+                <a href="animals.html" class="button">Animals</a>
+                <a href="nature.html" class="button">Nature</a>
+                <a href="portraits.html" class="button">Portraits</a>
+            </section>
         </main>
         
         <footer>
-                    <div><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://ashlynnallgeier.github.io/DIGIT100/">Ashlynn's Portfolio</a> by <span property="cc:attributionName">Ashlynn Allgeier</span> is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
-
+            <p>
+                © 2025 Ashlynn Allgeier •
+                <a href="https://ashlynnallgeier.github.io/DIGIT100/" target="_blank" rel="noopener">Portfolio Source</a> •
+                Licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">CC BY-ND 4.0</a>
+            </p>
         </footer>
     </body>
 </html>
