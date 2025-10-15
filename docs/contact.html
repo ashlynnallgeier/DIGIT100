@@ -1,65 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Me</title>
-        <link rel="stylesheet" href="site.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact | Ashlynn Allgeier</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="images/favicon.png">  
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="site.css">
         <script src="contact.js" defer></script>
     </head>
+    
     <body>
-        <header>
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img
+                        src="images/AA.png"
+                        alt="Ashlynn Allgeier Logo"
+                        class="logo-img"
+                    />
+                </a>
+                <p class="tagline">
+                    Digital Media | Photography | Multimedia Creation
+                </p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="photo.html">Photography</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <li><a href="photo.html">Photography</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
-        <div class="text"><h1>Contact Me</h1></div>
-        
-        <div class="contact">
-            <p>Fill out the form below to get in touch with me!</p>
+        <main class="page-content">
+            <h1>Contact Me</h1>
+            <p class="subtitle">
+                Have a question, project idea, or just want to say hi? I’d love to hear
+                from you!
+            </p>
             
-            <form id="contactForm">
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+            <section class="contact-content">
+                <form id="contactForm" class="contact-form">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <label for="name">Name:</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your name" 
+                            required
+                            >
+                            
+                            <label for="emailInput">Email:</label>
+                            <input 
+                            type="email" 
+                            id="emailInput" 
+                            name="email" 
+                            placeholder="Your email" 
+                            required
+                            >
+                            
+                            <label for="phone">Phone:</label>
+                            <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="Your phone number (optional)"
+                        >
+                    </fieldset>
                     
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="emailInput" name="email" placeholder="Your email" required><br><br>
-                    
-                    <label for="phone">Phone:</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="Your phone number"><br><br>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Message</legend>
-                    <label for="message">Your Message:</label><br>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
-                </fieldset>
-                
-                <button type="submit">Send Message</button>
-            </form>
+                    <fieldset>
+                        <legend>Message</legend>
+                        
+                        <label for="message">Your Message:</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="6" 
+                            placeholder="Write your message here..." 
+                            required
+                            ></textarea>
+                            </fieldset>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                            </form>
+                            
+                            <div class="confirmation" id="confirmationMessage" style="display: none;">
+                            <p>Thank you! Your message has been submitted successfully.</p>
+                            </div>
+            </section>
             
-            <div class="confirmation" id="confirmationMessage" style="display:none;">
-                <p>Thank you! Your message has been submitted.</p>
-            </div>
-        </div>
-        
-        <footer>
-            <p>&copy; 2025 Ashlynn Allgeier</p>
-        </footer>
-    </body>
+            
+                            </main>
+
+<footer>
+<p>&copy; 2025 Ashlynn Allgeier</p>
+</footer>
+</body>
 </html>

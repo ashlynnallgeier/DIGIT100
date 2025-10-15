@@ -1,54 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="gallery.css" />
-        
-        <title>Nature</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nature | Ashlynn Allgeier</title>
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
                     <link rel="icon" type="image/png" href="images/favicon.png">
+                        <link rel="stylesheet" href="site.css">
     </head>
+    
     <body>
-        <header><nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="photo.html">Photography</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href ="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="reflection.html">Reflection</a></li>
-            </ul>
-        </nav></header>
-        <div class="content"><title><h1>Nature</h1></title>
-            <div class="photo"><h2>Nature</h2></div>
-            <div class="overlay" id="overlay"></div>
-            <div class="gallery-container">
-                <figure><img src="images/nature/IMG_0652.jpg" alt="Bee" class="gallery-item" class="thumbnail"/><figcaption class="caption">Bee on a Flower</figcaption></figure>
-                <figure><img src="images/nature/IMG_2940.jpg" alt="Niagara Falls" class="gallery-item" class="thumbnail"/><figcaption class="caption">Niagara Falls</figcaption></figure>
-                <figure><img src="images/nature/IMG_1344.jpg" alt="Sunflowers" class="gallery-item" class="thumbnail"/><figcaption class="caption">Sunflower Field</figcaption></figure>
-                <figure><img src="images/nature/IMG_0643.jpg" alt="Flower" class="gallery-item" class="thumbnail"/><figcaption class="caption">Flower</figcaption></figure>
-                <figure><img src="images/nature/IMG_3070.jpg" alt="Ferris Wheel" class="gallery-item" class="thumbnail"/><figcaption class="caption">Ferris Wheel</figcaption></figure>
-                <figure><img src="images/nature/IMG_2947.jpg" alt="People" class="gallery-item" class="thumbnail"/><figcaption class="caption">People at Niagara Falls</figcaption></figure>
-                <figure><img src="images/nature/IMG_2747.jpg" alt="Flowers" class="gallery-item" class="thumbnail"/><figcaption class="caption">Flowers</figcaption></figure>
-       
-
+        <header class="navbar">
+            <div class="logo">
+                <img src="images/AA.png" alt="Ashlynn Allgeier Logo" class="logo-img">
+                    <p class="tagline">Digital Media | Photography | Multimedia Creation</p>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="photo.html" class="active">Photography</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="page-content">
+            <h1>Nature</h1>
+            <div class="subtitle">A selection of my nature photography work.</div>
+            
+            <div class="gallery-grid">
+                <figure>
+                    <img src="images/nature/IMG_0652.jpg" alt="Bee" onclick="openLightbox(this)">
+                        <figcaption>Bee on a Flower</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nature/IMG_2940.jpg" alt="Niagara Falls" onclick="openLightbox(this)">
+                        <figcaption>Niagara Falls</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nature/IMG_1344.jpg" alt="Sunflowers" onclick="openLightbox(this)">
+                        <figcaption>Sunflower Field</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nature/IMG_0643.jpg" alt="Flower" onclick="openLightbox(this)">
+                        <figcaption>Flower</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nature/IMG_3070.jpg" alt="Ferris Wheel" onclick="openLightbox(this)">
+                        <figcaption>Ferris Wheel</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nature/IMG_2947.jpg" alt="People" onclick="openLightbox(this)">
+                        <figcaption>People at Niagara Falls</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nature/IMG_2747.jpg" alt="Flowers" onclick="openLightbox(this)">
+                        <figcaption>Flowers</figcaption>
+                </figure>
+            </div>
+            
             <div id="lightbox" class="lightbox">
                 <span class="close" onclick="closeLightbox()">&times;</span>
-                <img class="lightbox-img" id="lightbox-img" src="">
-                    
+                <img id="lightbox-img" src="" alt="Lightbox Image">
                     <button class="prev" onclick="changeImage(-1)">&#10094;</button>
                     <button class="next" onclick="changeImage(1)">&#10095;</button>
             </div>
-        </div>
+        </main>
         
-        <div class="foottext"><footer>        <div><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://ashlynnallgeier.github.io/DIGIT100/">Ashlynn's Portfolio</a> by <span property="cc:attributionName">Ashlynn Allgeier</span> is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
- </footer></div>
+        <footer>
+            <p>
+                © 2025 Ashlynn Allgeier •
+                <a href="https://ashlynnallgeier.github.io/DIGIT100/" target="_blank" rel="noopener">Portfolio Source</a> •
+                Licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="noopener">CC BY-ND 4.0</a>
+            </p>
+        </footer>
+        
         <script src="java.js"></script>
     </body>
-    
 </html>

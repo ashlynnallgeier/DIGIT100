@@ -3,33 +3,38 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ashlynn Allgeier | About</title>
-        <link rel="stylesheet" href="site.css" />
-        
+        <title>Resume | Ashlynn Allgeier</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-                    
+                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
                     <link rel="icon" type="image/png" href="images/favicon.png">
+                        <link rel="stylesheet" href="site.css">
+                       
     </head>
     
     <body>
-        <header>
+        <header class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/AA.png" alt="Ashlynn Allgeier Logo" class="logo-img">
+                </a>
+                <p class="tagline">Digital Media | Photography | Multimedia Creation</p>
+            </div>
             <nav>
-                <ul class="nav">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="photo.html">Photography</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="photo.html">Photography</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
-        <main class="textres">
-            <h1>Ashlynn Allgeier</h1>
-            <p>
+        <main class="resume-content">
+            <h1>Resume</h1>
+            <p class="subtitle">
                 <a href="mailto:ashlynnallgeier24@gmail.com">ashlynnallgeier24@gmail.com</a> |
                 <a href="https://maps.app.goo.gl/zr9P4Yq5cAgzYQb58">Erie, PA 16504</a> |
                 <a href="tel:8148127947">(814) 812-7947</a> |
@@ -38,83 +43,69 @@
             
             <section>
                 <h2>Education</h2>
-                <div>
-                    <p class="job-title">The Pennsylvania State University | Erie, PA</p>
-                    <p class="date">Graduation: May 2026</p>
-                    <ul class="info">
-                        <li>Bachelor of Arts in Digital Media, Arts, and Technology</li>
-                        <li>Minor in Communication Arts and Mass Media</li>
-                        <li>GPA: 3.420 | Dean’s List: Three semesters</li>
-                    </ul>
-                </div>
+                <p><strong>The Pennsylvania State University</strong> | Erie, PA</p>
+                <p><em>Graduation:</em> May 2026</p>
+                <ul>
+                    <li>Bachelor of Arts in Digital Media, Arts, and Technology</li>
+                    <li>Minor in Communication Arts and Mass Media</li>
+                    <li>GPA: 3.420 | Dean’s List: Three semesters</li>
+                </ul>
             </section>
             
             <section>
                 <h2>Work Experience</h2>
                 
-                <div>
-                    <p class="job-title">Web Development Assistant</p>
-                    <p class="date">
-                        <a href="https://behrend.psu.edu/library">Behrend Library, Erie, PA</a> | February 2025 – April 2025
-                    </p>
-                    <ul class="info">
-                        <li>Collaborated with library staff to design and build <em>Turning the Page</em>, a WordPress site focused on Young Adult literature and sexual violence</li>
-                        <li>Used HTML, CSS, and WordPress to create an accessible layout with categories, annotations, and resource pages</li>
-                        <li>Organized site content including novel summaries, recent entries, and search features to support education and awareness</li>
-                    </ul>
-                </div>
+                <h3>Web Development Assistant</h3>
+                <p><a href="https://behrend.psu.edu/library">Behrend Library</a>, Erie, PA | February 2025 – April 2025</p>
+                <ul>
+                    <li>Collaborated with library staff to design and build <em>Turning the Page</em>, a WordPress site focused on Young Adult literature and sexual violence</li>
+                    <li>Used HTML, CSS, and WordPress to create an accessible layout with categories, annotations, and resource pages</li>
+                    <li>Organized site content including novel summaries, recent entries, and search features to support education and awareness</li>
+                </ul>
                 
-                <div>
-                    <p class="job-title">Food Service Worker</p>
-                    <p class="date">
-                        <a href="https://liveon.psu.edu/behrend/dining/dobbins-dining-hall">Dobbins Dining Hall (Behrend), Erie, PA</a> | September 2022 – Present
-                    </p>
-                    <ul class="info">
-                        <li>Train new staff and oversee daily operations as a shift supervisor</li>
-                        <li>Maintain stock of food prep stations and ensure smooth workflow</li>
-                        <li>Assist with meal prep as needed and maintain a clean work environment</li>
-                    </ul>
-                </div>
+                <h3>Food Service Worker</h3>
+                <p><a href="https://liveon.psu.edu/behrend/dining/dobbins-dining-hall">Dobbins Dining Hall (Behrend)</a>, Erie, PA | September 2022 – Present</p>
+                <ul>
+                    <li>Train new staff and oversee daily operations as a shift supervisor</li>
+                    <li>Maintain stock of food prep stations and ensure smooth workflow</li>
+                    <li>Assist with meal prep as needed and maintain a clean work environment</li>
+                </ul>
             </section>
             
             <section>
                 <h2>Volunteer Experience</h2>
                 
-                <div>
-                    <p class="job-title">The Band 814, Volunteer</p>
-                    <p class="date">
-                        <a href="https://www.theband814.com">Erie, PA</a> | September 2023 – Present
-                    </p>
-                    <ul class="info">
-                        <li>Mix live sound for concerts and live performances</li>
-                        <li>Create visual content for the band’s social media, including photography and videography</li>
-                        <li>Edit photos using Canva for merchandise and promotional materials</li>
-                    </ul>
-                </div>
+                <h3>The Band 814, Volunteer</h3>
+                <p><a href="https://www.theband814.com">Erie, PA</a> | September 2023 – Present</p>
+                <ul>
+                    <li>Mix live sound for concerts and live performances</li>
+                    <li>Create visual content for the band’s social media, including photography and videography</li>
+                    <li>Edit photos using Canva for merchandise and promotional materials</li>
+                </ul>
                 
-                <div>
-                    <p class="job-title">First Alliance Church, Volunteer</p>
-                    <p class="date">
-                        <a href="https://www.facerie.org">Erie, PA</a> | September 2021 – Present
-                    </p>
-                    <ul class="info">
-                        <li>Serve as a youth group leader, mentoring students and planning activities</li>
-                        <li>Collaborate with the worship team to perform live music for weekly services</li>
-                        <li>Assist with event setup, coordination, and community outreach</li>
-                    </ul>
-                </div>
+                <h3>First Alliance Church, Volunteer</h3>
+                <p><a href="https://www.facerie.org">Erie, PA</a> | September 2021 – Present</p>
+                <ul>
+                    <li>Serve as a youth group leader, mentoring students and planning activities</li>
+                    <li>Collaborate with the worship team to perform live music for weekly services</li>
+                    <li>Assist with event setup, coordination, and community outreach</li>
+                </ul>
             </section>
             
             <section>
                 <h2>Technical Skills</h2>
-                <ul class="info">
-                    <li><strong>Design & Creative Software:</strong> Adobe Creative Suite (Photoshop, Premiere Pro, Illustrator, After Effects), Canva</li>
-                    <li><strong>Social Media Management:</strong> Visual Content Creation (photography, graphics, short-form video), Branding, Page Growth & Engagement</li>
+                <ul>
+                    <li><strong>Design & Creative Software:</strong> Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere Pro, After Effects), Canva</li>
+                    <li><strong>Design Focus:</strong> Typography, Layout & Composition, Branding & Visual Identity, Color Theory, Digital Illustration</li>
                     <li><strong>Web Development:</strong> HTML, CSS, XML, XSLT, XPath, Squarespace, WordPress, GitHub</li>
-                    <li><strong>Video & Audio Production:</strong> DSLR/Mirrorless Camera Operation, Video Editing (Premiere Pro), Live Sound Mixing</li>
+                    <li><strong>Video Production:</strong> DSLR/Mirrorless Camera Operation, Studio & Field Setup, Shot Composition, Lighting, Green Screen, Teleprompter Use</li>
+                    <li><strong>Editing & Post-Production:</strong> Adobe Premiere Pro, After Effects, Photoshop; Motion Graphics, Video Reels, Audio Syncing, Color Correction</li>
+                    <li><strong>Audio Production:</strong> Live Sound Mixing, Microphone Setup, Audio Editing & Leveling</li>
+                    <li><strong>Social Media Management:</strong> Visual Content Creation (photography, graphics, short-form video), Branding, Page Growth & Engagement</li>
                     <li><strong>Photography:</strong> Portrait & Event Photography, Studio/Natural Lighting, Photo Editing (Photoshop, Lightroom)</li>
                 </ul>
             </section>
+            
         </main>
         
         <footer>
@@ -123,9 +114,9 @@
                 <span>Ashlynn Allgeier</span> is licensed under
                 <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
                     CC BY-ND 4.0
-                    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="CC" style="height:22px;margin-left:3px;vertical-align:text-bottom;">
-                        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="BY" style="height:22px;margin-left:3px;vertical-align:text-bottom;">
-                            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="ND" style="height:22px;margin-left:3px;vertical-align:text-bottom;">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style="height:22px;margin-left:3px;vertical-align:text-bottom;">
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style="height:22px;margin-left:3px;vertical-align:text-bottom;">
+                            <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="ND" style="height:22px;margin-left:3px;vertical-align:text-bottom;">
                 </a>
             </p>
         </footer>
