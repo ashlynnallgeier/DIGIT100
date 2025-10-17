@@ -461,4 +461,15 @@ footer a:hover {
     border-radius: 5px;  
 }
 
+.video-embed {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
 
